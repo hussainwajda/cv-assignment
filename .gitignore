@@ -1,0 +1,20 @@
+# Virtual environment and caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Synthetic stand-in media generated when data/ is empty
+outputs/_sample/
+
+# Model weights downloaded at runtime (Task 3)
+*.pt
+
+# Raw video is kept on Google Drive, not in Git (see data/README.md)
+data/*.mp4
+data/*.mov
+data/*.avi
+data/*.mkv
+data/*.webm
+
+.DS_Store

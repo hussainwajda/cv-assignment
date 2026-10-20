@@ -1,0 +1,8 @@
+# CCA-3 Computer Vision Assignment - Python dependencies
+# pip install -r requirements.txt
+
+numpy>=1.24.0
+opencv-contrib-python>=4.8.0   # use opencv-contrib-python-headless on a server without a GUI
+matplotlib>=3.7.0
+scikit-image>=0.21.0
+ultralytics>=8.0.0             # Task 3 only (YOLO)
