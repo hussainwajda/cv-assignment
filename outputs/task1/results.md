@@ -4,7 +4,7 @@
 
 - Photograph: `data/photo1.jpg`
 - Working resolution: 900 x 1600 px
-- Watershed input: `data/photo1.jpg`
+- Watershed input: `data/photo3_objects.jpg`
 
 ## A. Image Restoration (noise + filtering + PSNR/SSIM)
 
@@ -58,7 +58,7 @@ Figures: `b05_morphology_comparison.png`, `b08_canny_threshold_comparison.png`
 
 ## B2. Watershed Segmentation
 
-Input: data/photo1.jpg. Using the **per-component** marker threshold at `0.5 x max(distance)`, the watershed stage reported **26 object region(s)**; the global threshold on the same image reports **6**.
+Input: data/photo3_objects.jpg. Using the **per-component** marker threshold at `0.5 x max(distance)`, the watershed stage reported **21 object region(s)**; the global threshold on the same image reports **1**.
 
 Simple thresholding labels two objects that touch as a single blob. The distance transform resolves that: it peaks at the centre of every object, so thresholding it at 50% of the maximum yields one confident marker per object. `cv2.watershed` then floods outwards from those markers and places a ridge wherever two floods meet, which is on the contact line.
 
